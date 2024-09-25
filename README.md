@@ -39,7 +39,7 @@ export TF_CPP_MIN_LOG_LEVEL=1
 For CIFAR-10, CIFAR-100, and TinyImageNet, we use tfrecord files. For ImageNet30 and ImageNet100 we read the data from image files. This section describes how to download and prepare the datasets.
 
 ### ImageNet30
-Download the tar files following the links named "ImageNet-30-train" and "ImageNet-30-test" in the [CSI repo](ttps://github.com/alinlab/CSI).
+Download the tar files following the links named "ImageNet-30-train" and "ImageNet-30-test" in the [CSI repo](https://github.com/alinlab/CSI).
 
 Extract the files:
 ```bash
