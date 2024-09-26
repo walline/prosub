@@ -141,6 +141,7 @@ python3 $REPODIR/prosub_ossl.py \
 --datasetood=tinyimagenet-ood \
 --datasetunseen=tinyimagenet-ood \
 --nlabeled=5000 \
+--decayfactor=$DECAYFACTOR \
 --ws=50.0 \
 --wd=0.001 \
 --arch=WRN-28-4 \
