@@ -4,7 +4,9 @@ Official repository for ECCV2024 paper [ProSub: Probabilistic Open-Set Semi-Supe
 
 ## Requirements
 
-Python requirements are specified in requirements.txt.
+Python requirements are specified in [requirements.txt](requirements.txt).
+
+**Note**: We use a few functions from [TensorFlow Addons](https://www.tensorflow.org/addons) (TFA) for data augmentation. TFA is no longer maintained and does not work with the latest TensorFlow versions (it works with the version specified in [requirements.txt](requirements.txt)). Maintained replacements for these functions seem to exist in the [TensorFlow Models](https://www.tensorflow.org/api_docs/python/tfm/vision/augment) (TFM) library. Feel free to use these instead if you want to use the latest TensorFlow versions. We might update this repo to use TFM instead of TFA at some point.
 
 **Optional**: [Dockerfile](Dockerfile) defines a working docker environment for running this code.
 
