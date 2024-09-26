@@ -18,29 +18,23 @@ SET_MAPPING = smart_dict()
 
 SHAPES = {"cifar10": [32, 32, 3],
           "cifar100": [32, 32, 3],
-          "svhn": [32, 32, 3],
-          "uniform_noise": [32, 32, 3],
-          "tinyimagenet": [64, 64, 3],
-          "tin_id70": [64, 64, 3],
-          "tin_ood70": [64, 64, 3],
-          "tin_unseen60": [64, 64, 3],
-          "tin_firsthalf": [64, 64, 3],
-          "tin_secondhalf": [64, 64, 3],
-          "tinyimagenet_resized": [32, 32, 3],
-          "imagenet30_id": [224, 224, 3],
-          "imagenet30_ood": [224, 224, 3],
-          "imagenet30": [224, 224, 3],
-          "imagenet100_id": [224, 224, 3],
-          "imagenet100_ood": [224, 224, 3],
+          "tin-id": [64, 64, 3],
+          "tin-ood": [64, 64, 3],          
+          "tin-id70": [64, 64, 3],
+          "tin-ood70": [64, 64, 3],
+          "tin-unseen60": [64, 64, 3],
+          "imagenet30-id": [224, 224, 3],
+          "imagenet30-ood": [224, 224, 3],
+          "imagenet100-id": [224, 224, 3],
+          "imagenet100-ood": [224, 224, 3],
           }
 
 NCLASS = {"cifar10": 10,
           "cifar100": 100,
-          "tin_id70": 70,
-          "tin_firsthalf": 100,
-          "imagenet30_id": 20,
-          "imagenet30": 30,
-          "imagenet100_id": 50,
+          "tin-id70": 70,
+          "tin-id": 100,
+          "imagenet30-id": 20,
+          "imagenet100-id": 50,
           }
 
 @tf.function
@@ -180,5 +174,7 @@ class parse_dict(dict):
         return record_parse
         
 PARSEDICT = parse_dict()
-PARSEDICT["imagenet100_id"] = record_parse_imagenet
-PARSEDICT["imagenet100_ood"] = record_parse_imagenet
+PARSEDICT["imagenet100-id"] = record_parse_imagenet
+PARSEDICT["imagenet100-ood"] = record_parse_imagenet
+PARSEDICT["imagenet30-id"] = record_parse_imagenet
+PARSEDICT["imagenet30-ood"] = record_parse_imagenet

@@ -4,3 +4,4 @@ tqdm
 numpy
 scipy
 tensorflow_addons
+Pillow

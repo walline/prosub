@@ -100,8 +100,8 @@ Here are examples of how to run ProSub for the different datasets with the confi
 python3 $REPODIR/prosub_ossl.py \
 --datadir=$DATADIR \
 --traindir=$TRAINDIR \
---trainsteps=50000 \
---pretrainsteps=$((2**19)) \
+--pretrainsteps=50000 \
+--trainsteps=$((2**19)) \
 --dataset=cifar10 \
 --datasetood=cifar100 \
 --datasetunseen=cifar100 \
@@ -116,8 +116,8 @@ DECAYFACTOR=$(bc <<< "scale=4; 5/8")
 python3 $REPODIR/prosub_ossl.py \
 --datadir=$DATADIR \
 --traindir=$TRAINDIR \
---trainsteps=50000 \
---pretrainsteps=$((2**19)) \
+--pretrainsteps=50000 \
+--trainsteps=$((2**19)) \
 --dataset=cifar100 \
 --datasetood=cifar10 \
 --datasetunseen=cifar10 \
@@ -135,8 +135,8 @@ DECAYFACTOR=$(bc <<< "scale=4; 5/8")
 python3 $REPODIR/prosub_ossl.py \
 --datadir=$DATADIR \
 --traindir=$TRAINDIR \
---trainsteps=50000 \
---pretrainsteps=$((2**19)) \
+--pretrainsteps=50000 \
+--trainsteps=$((2**19)) \
 --dataset=tinyimagenet-id \
 --datasetood=tinyimagenet-ood \
 --datasetunseen=tinyimagenet-ood \
@@ -152,8 +152,8 @@ python3 $REPODIR/prosub_ossl.py \
 python3 $REPODIR/prosub_ossl.py \
 --datadir=$DATADIR \
 --traindir=$TRAINDIR \
---trainsteps=30000 \
---pretrainsteps=100000 \
+--pretrainsteps=30000 \
+--trainsteps=100000 \
 --dataset=imagenet30-id \
 --datasetood=imagenet30-ood \
 --datasetunseen=imagenet30-ood \
@@ -169,8 +169,8 @@ python3 $REPODIR/prosub_ossl.py \
 python3 $REPODIR/prosub_ossl.py \
 --datadir=$DATADIR \
 --traindir=$TRAINDIR \
---trainsteps=30000 \
---pretrainsteps=100000 \
+--pretrainsteps=30000 \
+--trainsteps=100000 \
 --dataset=imagenet100-id \
 --datasetood=imagenet100-ood \
 --datasetunseen=imagenet100-ood \

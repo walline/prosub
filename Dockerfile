@@ -5,6 +5,6 @@ RUN apt-get update && \
   git \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
-RUN git clone https://github.com/walline/ssl-tf2-sefoss
-WORKDIR /ssl-tf2-sefoss
+RUN git clone https://github.com/walline/prosub
+WORKDIR /prosub
 RUN pip install -r requirements.txt
