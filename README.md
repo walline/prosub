@@ -2,6 +2,8 @@
 
 Official repository for ECCV2024 paper [ProSub: Probabilistic Open-Set Semi-Supervised Learning with Subspace-Based Out-of-Distribution Detection](https://arxiv.org/abs/2407.11735)
 
+![ProSub fig](/media/model-fig.png)
+
 ## Requirements
 
 Python requirements are specified in [requirements.txt](requirements.txt).
